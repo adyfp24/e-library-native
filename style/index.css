@@ -5,7 +5,7 @@ a {
 
 body,
 html {
-    background-color: #cdf3fa;
+    background: linear-gradient(180deg, #addcff, #b2ffd9,#addcff);
     padding: 0;
     margin: 0;
     font-family: 'poppins';
@@ -17,14 +17,9 @@ html {
 
 .navbar {
     position: fixed;
-    background: rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
     width: 100%;
-    height: 60px;
+    height: 50px;
+    margin-top: 20px;
 }
 
 nav .main-container {
@@ -34,7 +29,7 @@ nav .main-container {
 
 nav .main-container .logo {
     width: 60px;
-    height: 60px;
+    height: 50px;
     margin-left: 10px;
 }
 
@@ -53,6 +48,16 @@ nav .container {
     justify-content: center;
     align-items: center;
 }
+nav .nav-child{
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 50%;
+    height: 50px;
+}
 
 nav .container ul {
     display: flex;
@@ -63,7 +68,7 @@ nav .container li {
     list-style: none;
     margin-left: 25px;
     margin-right: 25px;
-    line-height: 60px;
+    line-height: 50px;
 }
 
 nav .container a{
@@ -73,32 +78,34 @@ nav .container a{
 }
 
 nav .container a:hover {
-    background-color: #fff;
-    color: #333;
+    color: white;
 }
 
 nav .log-container {
     width: 100px;
-    line-height: 60px;
+    line-height: 50px;
+    margin-right: 5px;
 }
 nav .log-container a{
+    font-size: 20px;
+    font-weight: bold;
     padding: 8px 15px;
-    border-radius: 20px;
+    border-radius: 15px;
     transition: background-color 0.3s ease;
 }
 
 nav .log-container a:hover {
-    background-color: #fff;
-    color: #333;
+    background-color: rgba(255, 255, 255, 0.3); /* Warna latar belakang saat dihover */
+    transform: scale(1.05); 
 }
 
 
 /* head section */
 header {
-    padding-top: 60px;
+    padding-top: 70px;
     width: 100%;
     height: 100vh;
-    background-color: #cdf3fa;
+    
 }
 
 header .main-container {
@@ -120,16 +127,43 @@ header .main-container .container-right {
     align-items: center;
 }
 
+
 header .container-left h1{
     margin-bottom: 10px;
     font-weight: bolder;
 }
+
+/* Tambahkan styling untuk efek glassmorphism pada tombol */
+header .container-left .btn-start {
+    margin-top: 20px;
+}
+
+header .btn-start button {
+    background: rgba(255, 255, 255, 0.3); /* Warna latar belakang transparan */
+    border: none;
+    padding: 12px 45px;
+    border-radius: 10px;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(12px); /* Efek blur */
+    -webkit-backdrop-filter: blur(12px);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+header .btn-start button:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Warna latar belakang saat dihover */
+    transform: scale(1.05); /* Efek scaling saat dihover */
+}
+
+
 /*about section */
 
 .about {
     width: 100%;
     height: 100vh;
-    background-color: rosybrown;
     display: flex;
 }
 
