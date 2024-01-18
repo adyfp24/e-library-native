@@ -258,10 +258,7 @@ main .content {
     text-align: justify;
     padding: 20px;
 }
-.row-read a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.row-read button{
     background: rgba(255, 255, 255, 0.2); /* Warna latar belakang transparan */
     border: none;
     padding: 20px 60px;
@@ -269,13 +266,13 @@ main .content {
     height: 100%;
     color: black;
     font-size: 16px;
-    font-weight: bolder;
+    font-weight: bold;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 transparent;
     backdrop-filter: blur(12px); /* Efek blur */
     -webkit-backdrop-filter: blur(12px);
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
-.row-read a:hover {
+.row-read button:hover {
     background-color: rgba(255, 255, 255, 0.9); /* Warna latar belakang saat dihover */
 }
