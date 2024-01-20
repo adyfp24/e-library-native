@@ -170,7 +170,7 @@ main .content {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 70%;
     height: 100%;
 }
 .img-container img{
@@ -179,38 +179,16 @@ main .content {
 }
 
 .detail-book .desc{
-    width: 50%;
+    width: 30%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    border: solid 2px;
+    border: solid 1px;
     border-color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
-.desc .row-data{
-    width: 100%;
-    height: 10%;
-}
-.desc .row-fav{
-    width: 100%;
-    height: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.desc .row-desc{
-    width: 100%;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.desc .row-read{
-    width: 100%;
-    height: 15%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 .desc .row-title{
     width: 100%;
     height: 20%;
@@ -219,60 +197,38 @@ main .content {
     align-items: center;
 }
 .row-title h1{
+    text-align: center;
     font-size: 16px;
     font-weight: bold;
     font-style: italic;
 }
-.row-data{
+
+.desc .row-chapter{
+    overflow-y: auto;
+    width: 100%;
+    height: 80%;
     display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 transparent;
+    backdrop-filter: blur(12px); /* Efek blur */
+    -webkit-backdrop-filter: blur(12px);
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
-.row-data .box{
+
+.row-chapter .box{
+    background: rgba(255, 255, 255, 0.1); /* Warna latar belakang transparan */
+    padding: 32px 0;
+    height: 50px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 33.38%;
-    height: 100%;
-    border: solid 0.5px;
-    border-color: white;
+    border: solid 1px;
+    border-color: azure;
+}
+.row-chapter .box:hover {
+    background-color: rgba(255, 255, 255, 0.9); /* Warna latar belakang saat dihover */
+    cursor: pointer;
 }
 
-.row-fav button{
-    background: rgba(255, 255, 255, 0.2); /* Warna latar belakang transparan */
-    border: none;
-    width: 100%;
-    height: 100%;
-    padding: 20px 60px;
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 transparent;
-    backdrop-filter: blur(12px); /* Efek blur */
-    -webkit-backdrop-filter: blur(12px);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.row-fav button:hover {
-    background-color: rgba(255, 255, 255, 0.9); /* Warna latar belakang saat dihover */
-}
-.row-desc p{
-    text-align: justify;
-    padding: 20px;
-}
-.row-read button{
-    background: rgba(255, 255, 255, 0.2); /* Warna latar belakang transparan */
-    border: none;
-    padding: 20px 60px;
-    width: 100%;
-    height: 100%;
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 0 0 transparent;
-    backdrop-filter: blur(12px); /* Efek blur */
-    -webkit-backdrop-filter: blur(12px);
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-.row-read button:hover {
-    background-color: rgba(255, 255, 255, 0.9); /* Warna latar belakang saat dihover */
-}
+
