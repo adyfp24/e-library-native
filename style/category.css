@@ -247,7 +247,7 @@ main .content {
 
 .category .row .card-link{
     text-decoration: none;
-    display: block;
+    display: flex;
     color: inherit;
     width: 100%;
     height: 100%;
@@ -292,4 +292,19 @@ main .content {
     padding: 10px;
     width: 50%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.deskripsi h3{
+    font-size: medium;
+    font-weight: bold;
+}
+.deskripsi p{
+    text-justify: auto;
+    font-size: medium;
+}
+.deskripsi h5{
+    font-size: small;
+    font-weight: 600;
 }
