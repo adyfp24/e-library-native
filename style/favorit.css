@@ -1,0 +1,310 @@
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body,
+html {
+    background: linear-gradient(180deg, #addcff, #b2ffd9, #addcff);
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins';
+}
+
+
+
+/* nav section */
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+
+nav .main-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .main-container .logo {
+    width: 60px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+nav .main-container img {
+    margin-top: 5px;
+    width: 100%;
+    /* Maksimum lebar sesuai dengan lebar parent */
+    height: auto;
+    /* Maksimum tinggi sesuai dengan tinggi parent */
+}
+
+nav .container {
+    color: black;
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-child {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 50%;
+    height: 50px;
+}
+
+nav .container ul {
+    display: flex;
+}
+
+nav .container li {
+    color: black;
+    list-style: none;
+    margin-left: 25px;
+    margin-right: 25px;
+    line-height: 50px;
+}
+
+nav .container a {
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav .container a:hover {
+    color: white;
+}
+
+nav .log-container {
+    width: 100px;
+    line-height: 50px;
+    margin-right: 5px;
+}
+
+nav .log-container a {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav .log-container a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    /* Warna latar belakang saat dihover */
+    transform: scale(1.05);
+}
+
+/* sidebar */
+
+main {
+    display: flex;
+    padding-top: 100px;
+}
+
+main .sidebar {
+    width: 200px;
+    height: 500px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+main .sidebar ul {
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+main .sidebar .container-bar {
+    margin-top: 20px;
+}
+
+main .sidebar li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+main .sidebar li:hover {
+    color: white;
+    cursor: pointer;
+}
+
+
+main .content {
+    width: 100vmax;
+    height: 500px;
+    margin-left: 265px;
+    margin-right: 30px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    overflow-y: auto;
+}
+
+.category .tittle h1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: medium;
+}
+
+/* .category .genres-dropdown {
+   
+} */
+
+.category .filter-container {
+    display: flex;
+    width: 100%;
+}
+
+.category .genres-dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genres-dropdown button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    width: 130px;
+    margin-top: 10px;
+    margin-left: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    cursor: pointer;
+}
+
+.category .search-container {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    padding-left: 20px;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    margin-left: 20px;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 15px 0 0 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.search-container button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 0 15px 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05);
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.search-container button:hover {
+    background-color: aquamarine;
+}
+
+.category .card-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.category .card-container .row {
+    display: flex;
+    margin-top: 20px;
+}
+
+.category .row .card-link{
+    text-decoration: none;
+    display: flex;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+}
+.card-container .card {
+    overflow: hidden;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-container .card:hover,
+.card:active {
+    transform: scale(1.05); 
+}
+.card-container .card {
+    width: 300px;
+    height: 150px;
+    margin-right: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+}
+
+/* book card */
+.card .book-img {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    width: 40%;
+    height: 100%;
+}
+
+.book-img img {
+    width: 100%;
+    height: 90%;
+}
+
+.card .deskripsi {
+    padding: 10px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.deskripsi h3{
+    font-size: medium;
+    font-weight: bold;
+}
+.deskripsi p{
+    text-justify: auto;
+    font-size: medium;
+}
+.deskripsi h5{
+    font-size: small;
+    font-weight: 600;
+}
